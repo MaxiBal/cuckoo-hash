@@ -1,12 +1,13 @@
 # Cuckoo Hash Table
 
-A simple c++ cuckoo hash table implementation
+A simple, c++ cuckoo hash table implementation
 
 ## Usage
 
 ```c++
-cuckoo_hash::cuckoo_hash_table<int> table;
+typedef int hash_item_type;
 
+cuckoo_hash_table<hash_item_type> table;
 
 std::function<int(hash_item_type)> hashing_functions[] =
 {
